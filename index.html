@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aprende C desde cero con nuestra guía completa. Tutoriales, ejemplos prácticos y ejercicios.">
+    <meta name="author" content="Isaac Esteban Haro Torres">
+    <title>⚡ C Desde Cero - Guía Completa</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <a href="#" class="logo">⚡ C Desde Cero</a>
+                <ul class="nav-menu">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#temas">Temas</a></li>
+                    <li><a href="#contenido">Contenido</a></li>
+                    <li><a href="#ejemplos">Ejemplos</a></li>
+                    <li><a href="#recursos">Recursos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <div class="container">
+                <h1>⚡ C Desde Cero - Guía Completa</h1>
+                <p class="hero-subtitle">Aprende C desde los fundamentos hasta conceptos avanzados</p>
+                <blockquote class="hero-quote">
+                    "C is a general-purpose programming language created by Dennis Ritchie at Bell Labs."
+                </blockquote>
+                <a href="#temas" class="btn btn-primary">Explorar Temas</a>
+            </div>
+        </section>
+
+        <section id="temas" class="topics">
+            <div class="container">
+                <h2>📖 Temas del Curso</h2>
+                <p class="topics-intro">Haz clic en cualquier tema para ver el contenido detallado</p>
+                
+                <div class="topics-grid">
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">📌</span>
+                            <h3>Módulo 1: Fundamentos</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema1-1">Introducción a C</a></li>
+                            <li><a href="#tema1-2">Instalación GCC</a></li>
+                            <li><a href="#tema1-3">Hola Mundo</a></li>
+                            <li><a href="#tema1-4">Variables y tipos</a></li>
+                        </ul>
+                        <a href="#tema1-1" class="btn-topic">Ver tema →</a>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">⚙️</span>
+                            <h3>Módulo 2: Intermedio</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema2-1">Punteros</a></li>
+                            <li><a href="#tema2-2">Arrays y strings</a></li>
+                            <li><a href="#tema2-3">Structs</a></li>
+                            <li><a href="#tema2-4">Manejo de memoria</a></li>
+                        </ul>
+                        <a href="#tema2-1" class="btn-topic">Ver tema →</a>
+                    </div>
+
+                    <div class="topic-card">
+                        <div class="topic-header">
+                            <span class="topic-icon">🚀</span>
+                            <h3>Módulo 3: Avanzado</h3>
+                        </div>
+                        <ul class="topic-list">
+                            <li><a href="#tema3-1">Archivos</a></li>
+                            <li><a href="#tema3-2">Funciones avanzadas</a></li>
+                            <li><a href="#tema3-3">Makefiles</a></li>
+                            <li><a href="#tema3-4">Debugging con GDB</a></li>
+                        </ul>
+                        <a href="#tema3-1" class="btn-topic">Ver tema →</a>
+                    </div>
+                </div>
+
+                <div class="topic-content">
+                    <div class="content-detail" id="tema1-1">
+                        <h3>📌 Introducción a C</h3>
+                        <div class="content-body">
+                            <p><strong>C</strong> es un lenguaje de programación de propósito general creado por Dennis Ritchie en Bell Labs en 1972.</p>
+                            <h4>Características:</h4>
+                            <ul>
+                                <li>Programación estructurada</li>
+                                <li>Acceso directo a memoria</li>
+                                <li>Código portable</li>
+                                <li>Alto rendimiento</li>
+                            </ul>
+                            <div class="info-box">
+                                <strong>💡 Dato curioso:</strong> C fue creado para desarrollar el sistema operativo Unix.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema1-2">
+                        <h3>🔧 Instalación GCC</h3>
+                        <div class="content-body">
+                            <h4>En Windows:</h4>
+                            <pre><code># Instalar MinGW o MSYS2
+# Descargar desde mingw-w64.org</code></pre>
+                            <h4>En Linux:</h4>
+                            <pre><code>sudo apt-get install gcc
+sudo yum install gcc</code></pre>
+                            <h4>En macOS:</h4>
+                            <pre><code>xcode-select --install</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema1-3">
+                        <h3>👋 Hola Mundo</h3>
+                        <div class="content-body">
+                            <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hola Mundo!\n");
+    return 0;
+}</code></pre>
+                            <h4>Compilar y ejecutar:</h4>
+                            <pre><code>gcc hola.c -o hola
+./hola</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema1-4">
+                        <h3>📦 Variables y Tipos</h3>
+                        <div class="content-body">
+                            <pre><code>#include &lt;stdio.h&gt;
+
+int main() {
+    int edad = 30;
+    float altura = 1.75f;
+    double pi = 3.14159265;
+    char inicial = 'J';
+    
+    printf("Edad: %d\n", edad);
+    printf("Altura: %.2f\n", altura);
+    return 0;
+}</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema2-1">
+                        <h3>🔗 Punteros</h3>
+                        <div class="content-body">
+                            <pre><code>int valor = 42;
+int* ptr = &valor;
+
+printf("Valor: %d\n", valor);
+printf("Dirección: %p\n", (void*)&valor);
+printf("Valor via ptr: %d\n", *ptr);</code></pre>
+                            <div class="info-box">
+                                <strong>⚠️ Importante:</strong> Los punteros permiten acceso directo a memoria.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema2-2">
+                        <h3>📚 Arrays y Strings</h3>
+                        <div class="content-body">
+                            <pre><code>// Array
+int numeros[5] = {1, 2, 3, 4, 5};
+
+// String
+char nombre[] = "Juan";
+char saludo[50];
+
+strcpy(saludo, "Hola ");
+strcat(saludo, nombre);
+printf("%s\n", saludo);</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema2-3">
+                        <h3>🏗️ Structs</h3>
+                        <div class="content-body">
+                            <pre><code>typedef struct {
+    char nombre[50];
+    int edad;
+    float altura;
+} Persona;
+
+Persona p1;
+strcpy(p1.nombre, "Juan");
+p1.edad = 30;
+
+printf("%s tiene %d años\n", p1.nombre, p1.edad);</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema2-4">
+                        <h3>💾 Manejo de Memoria</h3>
+                        <div class="content-body">
+                            <pre><code>#include &lt;stdlib.h&gt;
+
+// malloc
+int* array = (int*)malloc(10 * sizeof(int));
+
+// Usar memoria
+for (int i = 0; i < 10; i++) {
+    array[i] = i;
+}
+
+// free
+free(array);
+array = NULL;</code></pre>
+                            <div class="info-box">
+                                <strong>⚠️ Importante:</strong> Siempre libera memoria asignada con malloc.
+                            </div>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema3-1">
+                        <h3>📁 Archivos</h3>
+                        <div class="content-body">
+                            <pre><code>// Escribir
+FILE* archivo = fopen("datos.txt", "w");
+if (archivo != NULL) {
+    fprintf(archivo, "Hola Archivo\n");
+    fclose(archivo);
+}
+
+// Leer
+archivo = fopen("datos.txt", "r");
+char linea[100];
+while (fgets(linea, sizeof(linea), archivo) != NULL) {
+    printf("%s", linea);
+}
+fclose(archivo);</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema3-2">
+                        <h3>🔧 Funciones Avanzadas</h3>
+                        <div class="content-body">
+                            <pre><code>// Función con puntero
+void modificar(int* valor) {
+    *valor = 100;
+}
+
+// Función que retorna puntero
+int* crearArray(int size) {
+    return (int*)malloc(size * sizeof(int));
+}
+
+// Funciones variádicas
+int sumar(int count, ...) {
+    va_list args;
+    va_start(args, count);
+    // procesar argumentos
+    va_end(args);
+}</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema3-3">
+                        <h3>📋 Makefiles</h3>
+                        <div class="content-body">
+                            <pre><code>CC = gcc
+CFLAGS = -Wall -g
+TARGET = mi_programa
+
+all: $(TARGET)
+
+$(TARGET): main.o utils.o
+	$(CC) $(CFLAGS) -o $(TARGET) main.o utils.o
+
+main.o: main.c
+	$(CC) $(CFLAGS) -c main.c
+
+clean:
+	rm -f *.o $(TARGET)</code></pre>
+                            <h4>Usar make:</h4>
+                            <pre><code>make      # Compilar
+make clean # Limpiar</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                    <div class="content-detail" id="tema3-4">
+                        <h3>🐛 Debugging con GDB</h3>
+                        <div class="content-body">
+                            <h4>Compilar con debug:</h4>
+                            <pre><code>gcc -g programa.c -o programa</code></pre>
+                            <h4>Comandos GDB:</h4>
+                            <pre><code>gdb ./programa      # Iniciar
+break main          # Breakpoint
+run                 # Ejecutar
+next                # Siguiente línea
+print variable      # Ver variable
+continue            # Continuar
+quit                # Salir</code></pre>
+                        </div>
+                        <a href="#temas" class="btn btn-back">← Volver a temas</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contenido" class="content">
+            <div class="container">
+                <h2>📚 Contenido del Curso</h2>
+                <div class="modules">
+                    <div class="module">
+                        <h3>Módulo 1: Fundamentos</h3>
+                        <ul>
+                            <li>Introducción a C</li>
+                            <li>Instalación GCC</li>
+                            <li>Hola Mundo</li>
+                            <li>Variables y tipos</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+                    <div class="module">
+                        <h3>Módulo 2: Intermedio</h3>
+                        <ul>
+                            <li>Punteros</li>
+                            <li>Arrays y strings</li>
+                            <li>Structs</li>
+                            <li>Manejo de memoria</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+                    <div class="module">
+                        <h3>Módulo 3: Avanzado</h3>
+                        <ul>
+                            <li>Archivos</li>
+                            <li>Funciones avanzadas</li>
+                            <li>Makefiles</li>
+                            <li>Debugging con GDB</li>
+                        </ul>
+                        <a href="#temas" class="btn-module">Ir a temas →</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="ejemplos" class="examples">
+            <div class="container">
+                <h2>📝 Ejemplos Rápidos</h2>
+                <div class="code-block">
+                    <h3>Hola Mundo</h3>
+                    <pre><code class="language-c">#include &lt;stdio.h&gt;
+
+int main() {
+    printf("Hola Mundo!\n");
+    return 0;
+}</code></pre>
+                </div>
+                <div class="code-block">
+                    <h3>Punteros</h3>
+                    <pre><code class="language-c">int valor = 42;
+int* ptr = &valor;
+printf("Valor: %d\n", *ptr);</code></pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="recursos" class="resources">
+            <div class="container">
+                <h2>📖 Recursos Adicionales</h2>
+                <div class="resource-grid">
+                    <div class="resource-card">
+                        <h4>Documentación Oficial</h4>
+                        <ul>
+                            <li><a href="https://en.cppreference.com/w/c" target="_blank">C Reference</a></li>
+                            <li><a href="https://www.gnu.org/software/gnu-c-manual/" target="_blank">GNU C Manual</a></li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Herramientas</h4>
+                        <ul>
+                            <li>GCC</li>
+                            <li>GDB</li>
+                            <li>Valgrind</li>
+                        </ul>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Comunidades</h4>
+                        <ul>
+                            <li>Stack Overflow - C</li>
+                            <li>Reddit r/C_Programming</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2>👨‍💻 Desarrollado por Isaac Esteban Haro Torres</h2>
+                <p class="contact-title">Ingeniero en Sistemas · Full Stack · Automatización · Data</p>
+                <div class="contact-info">
+                    <p>📧 Email: <a href="mailto:zackharo1@gmail.com">zackharo1@gmail.com</a></p>
+                    <p>📱 WhatsApp: 098805517</p>
+                    <p>💻 GitHub: <a href="https://github.com/ieharo1" target="_blank">github.com/ieharo1</a></p>
+                    <p>🌐 Portafolio: <a href="https://ieharo1.github.io/portafolio-isaac.haro/" target="_blank">ieharo1.github.io/portafolio-isaac.haro/</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Isaac Esteban Haro Torres - Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
